@@ -1,0 +1,35 @@
+<div class="container text-center">
+  <div class="row">
+    <div class="col-sm-12">
+    <!-- Nombre -->
+    <h1>Jorge Godoy V</h1>
+    <!-- Cargo -->
+    <h6>
+      Full Stack Developer / 
+      <%= link_to "Coding", root_path %> / 
+      <%= link_to "Makers", root_path %> / 
+      <%= link_to "Entrepreneur", root_path %> / 
+      <%= link_to "Blogging", articles_path %>
+    </h6>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <!-- Email -->
+    <a href="mailto:jgodoy@desdelacalera.cl">jgodoy@desdelacalera.cl</a>
+    <!-- Descripción de tu perfil, hobbies y pasiones -->
+    <p>Soy <strong>Ingeniero en electrónica con mensión</strong> en computación y redes, con mas de 15 años de experiencia en atencion al cliente y diagnostico de equipos computacionales, 
+    <strong>Full Stack Developer</strong>, entusiasta pues mi Stack tecnologico 
+    es una divertida mezcla de lenguajes de programación pues muevo mis proyectos entre arquitecturas como 
+    <sub>Windows(server, home, profesional), Linux(Debian), MacOs(Sabores), Arduino, Raspnerry, etc, etc.</sub></p>
+      <%= image_tag("systems.jpg", alt: "Imagen", class: "col-sm-10") %>
+    <h3>Ultimos 2 Empleos</h3>
+    <ul>
+      <li>Fundacion Educacional Becarb - La Calera,<sub> Encargado SEP (consultor tecnologico)</sub></li>
+      <li>Trabajos Independientes, <sub>Reciclaje tecnologico 2020</sub></li>
+    </ul>
+  </div>
+<div class="col-sm-6"><%= image_tag("JGodoycard.jpg", alt: "Imagen", class: "col-sm-8") %>
+</div>
+</div>
+</div>

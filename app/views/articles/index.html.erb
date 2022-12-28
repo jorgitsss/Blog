@@ -1,0 +1,26 @@
+<h1>Articles</h1>
+<%= link_to "New Article", new_path %>
+<hr>
+<% @articles.each do |article| %>
+<div class="card border-success mb-3" style="max-width: 18rem;">
+  <div class="card-header bg-transparent border-success">
+  <p>
+    <strong>id: <%= article.id %>
+  </p></div>
+  <div class="card-body  text-primary">
+    <h5 class="card-title">Title:</strong>
+    <%= article.title %></h5>
+    <p class="card-text">  <p>
+    <strong>Content:</strong>
+    <%= article.body %>
+  </p></p>
+  </div>
+  <div class="card-footer bg-transparent border-success">
+    <strong>Link:</strong><h6>
+    <%= article.link %></h6>
+    <strong>Published:</strong>
+    <%= article.published %>
+  </div>
+</div>
+  <hr>
+<% end %>
